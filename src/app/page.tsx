@@ -19,7 +19,11 @@ import {
   FaBook, 
   FaFire 
 } from "react-icons/fa";
- import Image from "next/image";
+
+import Image from "next/image";
+import { FaFigma } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript, SiVite, SiFastapi } from "react-icons/si";
+
 
 export default function App() {
   // Typewriter effect for intro
@@ -217,21 +221,26 @@ export default function App() {
           </motion.h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
-              { icon: FaJava, name: "Java", color: "text-red-600", description: "Started in my 1st year of college, strong foundation in OOP and algorithms." },
-              { icon: FaPython, name: "Python", color: "text-blue-600", description: "Learned in my 5th/6th year of Secondary school, proficient in scripting and data analysis." },
-              { icon: FaHtml5, name: "HTML", color: "text-orange-600", description: "Began in my 2nd year, skilled in creating structured web pages." },
-              { icon: FaCss3Alt, name: "CSS", color: "text-blue-500", description: "Started in my 2nd year, adept at styling and responsive design." },
-              { icon: FaJs, name: "JavaScript", color: "text-yellow-500", description: "Learned in my 2nd year, experienced in dynamic web applications." },
-              { icon: FaNodeJs, name: "Node.js", color: "text-green-600", description: "Started in my 2nd year, proficient in server-side development." },
-              { icon: FaDatabase, name: "SQL", color: "text-slate-700", description: "Learned in my 2nd year, strong understanding of database management." },
-              { icon: FaDatabase, name: "MongoDB", color: "text-green-700", description: "Started in my 2nd year, experienced with NoSQL databases." },
-              { icon: FaBook, name: "Prolog", color: "text-purple-700", description: "Started in my 1st year of college, knowledge in logic programming." },
-              { icon: FaDatabase, name: "Express", color: "text-slate-600", description: "Learned in my 2nd year, skilled in building RESTful APIs." },
-              { icon: FaReact, name: "React", color: "text-cyan-500", description: "Self-taught, proficient in building interactive UIs." },
-              { icon: FaSwift, name: "Swift", color: "text-orange-500", description: "Self-taught, knowledgeable in iOS app development." },
-              { icon: FaFire, name: "Firebase", color: "text-yellow-600", description: "Self-taught, experienced in backend services and real-time databases." },
-              { icon: FaGitAlt, name: "Git", color: "text-red-600", description: "Independent learning, proficient in version control and collaboration." }
-            ].map((skill, index) => (
+                { icon: FaJava, name: "Java", color: "text-red-600", description: "A versatile, object-oriented programming language widely used for backend, Android, and enterprise applications." },
+                { icon: FaPython, name: "Python", color: "text-blue-600", description: "A high-level, interpreted language known for its readability and use in automation, data science, and web development." },
+                { icon: FaHtml5, name: "HTML", color: "text-orange-600", description: "The standard markup language for creating and structuring content on the web." },
+                { icon: FaCss3Alt, name: "CSS", color: "text-blue-500", description: "A style sheet language used for describing the look and formatting of web pages." },
+                { icon: FaJs, name: "JavaScript", color: "text-yellow-500", description: "A dynamic scripting language enabling interactive web pages and modern frontend frameworks." },
+                { icon: FaNodeJs, name: "Node.js", color: "text-green-600", description: "A JavaScript runtime for building scalable server-side and networking applications." },
+                { icon: FaDatabase, name: "SQL", color: "text-slate-700", description: "A domain-specific language for managing and querying relational databases." },
+                { icon: FaDatabase, name: "MongoDB", color: "text-green-700", description: "A NoSQL database program using JSON-like documents for flexible data storage." },
+                { icon: FaBook, name: "Prolog", color: "text-purple-700", description: "A logic programming language associated with artificial intelligence and computational linguistics." },
+                { icon: FaDatabase, name: "Express", color: "text-slate-600", description: "A minimal and flexible Node.js web application framework for building APIs and web servers." },
+                { icon: FaReact, name: "React", color: "text-cyan-500", description: "A JavaScript library for building user interfaces with reusable components." },
+                { icon: FaSwift, name: "Swift", color: "text-orange-500", description: "A powerful and intuitive programming language for iOS, macOS, and Apple ecosystem development." },
+                { icon: FaFire, name: "Firebase", color: "text-yellow-600", description: "A platform by Google offering real-time databases, authentication, and backend services for web and mobile apps." },
+                { icon: FaGitAlt, name: "Git", color: "text-red-600", description: "A distributed version control system for tracking changes in source code during software development." },
+                { icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-500", description: "A utility-first CSS framework for rapidly building custom user interfaces." },
+                { icon: FaFigma, name: "Figma", color: "text-pink-500", description: "A collaborative interface design tool used for UI/UX design and prototyping." },
+                { icon: SiTypescript, name: "TypeScript", color: "text-blue-700", description: "A strongly typed superset of JavaScript that compiles to plain JavaScript." },
+                { icon: SiVite, name: "Vite", color: "text-purple-500", description: "A fast build tool and development server for modern web projects, especially React and Vue." },
+                { icon: SiFastapi, name: "FastAPI", color: "text-green-700", description: "A modern, high-performance Python web framework for building APIs with automatic OpenAPI documentation." }
+              ].map((skill, index) => (
               <motion.div
                 key={skill.name}
                 className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center group"
