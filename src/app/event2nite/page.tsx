@@ -103,13 +103,13 @@ export default function Event2Nite() {
       {/* Buttons */}
       <div className="flex justify-center gap-6 py-20">
         <a
-          href="#"
+          href="https://event2nite.vercel.app/"
           className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow transition"
         >
           Try Out The Website
         </a>
         <a
-          href="#"
+          href="https://github.com/ramzMA/Event2Nite"
           className="bg-white border px-6 py-3 rounded-full hover:bg-gray-100 transition"
         >
           Download From GitHub
