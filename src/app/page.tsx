@@ -277,6 +277,14 @@ export default function App() {
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
+              {
+                name: "CapitalCraft",
+                description: "A modern social finance platform with authentication, posts, comments, and a clean UI.",
+                image: "/images/Feed1.png",
+                icons: [SiFastapi, FaPython, FaReact, SiTypescript, SiTailwindcss],
+                gradient: "from-fuchsia-600 to-rose-600",
+                link: "/CapitalCraft"
+              },
               { 
                 name: "DailyPulse", 
                 description: "A news aggregation platform with real-time updates",
