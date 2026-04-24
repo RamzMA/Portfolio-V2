@@ -140,7 +140,7 @@ export default function App() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Image 
-                  src="/images/IMG_7249.jpg" 
+                  src="/images/IMG_1222.jpg" 
                   alt="Ramz Ahmed" 
                   width={320}
                   height={320}
