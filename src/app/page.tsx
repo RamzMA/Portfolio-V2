@@ -22,7 +22,7 @@ import {
 
 import Image from "next/image";
 import { FaFigma } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiVite, SiFastapi } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiVite, SiFastapi, SiDjango, SiMysql } from "react-icons/si";
 
 
 export default function App() {
@@ -239,7 +239,10 @@ export default function App() {
                 { icon: FaFigma, name: "Figma", color: "text-pink-500", description: "A collaborative interface design tool used for UI/UX design and prototyping." },
                 { icon: SiTypescript, name: "TypeScript", color: "text-blue-700", description: "A strongly typed superset of JavaScript that compiles to plain JavaScript." },
                 { icon: SiVite, name: "Vite", color: "text-purple-500", description: "A fast build tool and development server for modern web projects, especially React and Vue." },
-                { icon: SiFastapi, name: "FastAPI", color: "text-green-700", description: "A modern, high-performance Python web framework for building APIs with automatic OpenAPI documentation." }
+                { icon: SiFastapi, name: "FastAPI", color: "text-green-700", description: "A modern, high-performance Python web framework for building APIs with automatic OpenAPI documentation." },
+                { icon: SiDjango, name: "Django", color: "text-green-800", description: "A high-level Python web framework that encourages rapid development and clean, pragmatic design." },
+                { icon: SiMysql, name: "MySQL", color: "text-blue-700", description: "An open-source relational database management system widely used for web applications." },
+                { icon: SiDjango, name: "Django REST Framework", color: "text-red-700", description: "A powerful and flexible toolkit for building Web APIs on top of Django." }
               ].map((skill, index) => (
               <motion.div
                 key={skill.name}
